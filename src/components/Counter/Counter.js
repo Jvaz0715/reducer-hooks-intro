@@ -1,6 +1,13 @@
 import React, {useContext} from 'react';
 import { CountContext } from "../../context/CountContext";
 
+import {
+    INCREMENT,
+    DECREMENT,
+    RESET,
+    MULTIPLY_3,
+    DIVIDE_2
+} from "../../context/types";
 function Counter() {
 
     // const context = useContext(CountContext);
@@ -16,15 +23,33 @@ function Counter() {
             <h1>Count: {count}</h1>
 
             <button
-                onClick={() => dispatch({ type: "INCREMENT" })}
+                onClick={() => dispatch({ type: INCREMENT })}
             >
                 +
             </button>
 
             <button
-                onClick={() => dispatch({ type: "DECREMENT" })}
+                onClick={() => dispatch({ type: DECREMENT })}
             >
                 -
+            </button>
+
+            <button
+                onClick={() => dispatch({ type: RESET })}
+            >
+                Reset
+            </button>
+
+            <button
+                onClick={() => dispatch({ type: MULTIPLY_3 })}
+            >
+                x3
+            </button>
+
+            <button
+                onClick={() => dispatch({ type: DIVIDE_2 })}
+            >
+                /2
             </button>
         </div>
     )
