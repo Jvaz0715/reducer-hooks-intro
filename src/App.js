@@ -1,10 +1,14 @@
 import Counter from './components/Counter/Counter';
+import CountContextWrapper from './context/CountContext';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <CountContextWrapper>
+        <Counter />
+      </CountContextWrapper>
+      
     </div>
   );
 }
