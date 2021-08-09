@@ -1,6 +1,7 @@
 import React from 'react'
 
-function Parent() {
+function Parent(props) {
+    console.log(props);
     return (
         <div>
             
