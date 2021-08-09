@@ -1,12 +1,10 @@
-import Parent from './components/Parent/Parent';
+import Counter from './components/Counter/Counter';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Parent>
-        <h1>Good Morning Class</h1>
-      </Parent>
+      <Counter />
     </div>
   );
 }

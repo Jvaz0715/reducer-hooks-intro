@@ -1,12 +1,17 @@
 import React from 'react'
 
-function Parent(props) {
-    console.log(props);
-    return (
-        <div>
+// function Parent(props) {
+//     console.log(props);
+//     return (
+//         <div>
             
-        </div>
-    )
+//         </div>
+//     )
+// }
+
+function Parent ({ children }) {
+    // console.log(children)
+    return <div>{ children }</div>
 }
 
-export default Parent
+export default Parent;
